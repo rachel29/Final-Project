@@ -24,3 +24,6 @@ li a {
 li a:hover {
     background-color: #111;
 }
+a:hover {
+	background-color: red;
+}
