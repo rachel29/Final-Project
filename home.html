@@ -1,44 +1,78 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		  <link rel="stylesheet"  href="home.css">
-		<title>Boop!</title>
-    <div style="float:right">
-  <input type="button" class = "login" onclick="location.href='login.html';" value="Login"/>
-		<input type="button" class = "login" onclick="location.href='signup.html';" value="Sign Up"/>
-	    
-    </div>
-    <h1>Boop!</h1>
-  <ul>
-      <li><a class="active" href="home.html">Home</a></li>
-      <li><a href="textbooks.html">Buy Textbooks</a></li>
-      <li><a href="prepbooks.html">Buy Prep Books</a></li>
-      <li><a href="sell.html">Sell Books</a></li>
-      <li><a href="blog.html">Blog</a></li>
-	</ul>
-<body> 
+<style>
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>
+<body>
+
 <h2>Search</h2>
-<div>
-	<form action="/action_page.php" style="border:1px solid #ccc">
+
+<form action="/action_page.php" style="border:1px solid #ccc">
   <div class="container">
-    <input type="checkbox" > Textbook
-    <input type="checkbox" > Prep Book <br><br>
     <label><b>Subject</b></label>
-    <input type="text" placeholder="Enter Subject" name="subject" optional><br>
-    <label><b>Publisher</b></label> 
-    <input type="text" placeholder="Name of Publisher" name="Publisher" optional><br>
-    <label><b>Author</b></label> 
-    <input type="text" placeholder="Name of Author" name="Author" optional><b>
+    <input type="text" placeholder="Enter Subject" name="subject" optional>
+    <label><b>Publisher</b></label> <br>
+    <input type="text" placeholder="Name of Publisher" name="Publisher/Author" optional>
+    <label><b>Author</b></label> <br>
+    <input type="text" placeholder="Name of Author" name="Author" optional>
+   
+    
+
     <div class="clearfix">
       <button type="button" class="search">Search</button>
     </div>
   </div>
 </form>
-	</div>	
-		
-	<h2> class="about" About Boop!</h2>
-<h> Founded in 2017, Boop! aims to make obtaining educational materials easier for high school and college students in the U.S. 
-		Students can buy and sell books on our site. The Boop! team consists of a group of high school girls in the Girls Who Code program.</h3>
-		
+
 </body>
 </html>
