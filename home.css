@@ -67,6 +67,6 @@ input[type=text], input[type=password] {
        width: 100%;
     }
 }
-.about {
-	text-align: center;
+h1 {
+	font-family: 'Questrial', sans-serif;
 	}
