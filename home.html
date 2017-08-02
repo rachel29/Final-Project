@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
-<style>
+    <head>
+		<link rel="stylesheet"  href="home.css">
+  	<title>Boop!</title>
+		<div style="float:right">
+		<input type="button" class="login" onclick="location.href='login.html';" value="Login"/>
+	<input type="button" class = "login" onclick="location.href='signup.html';" value="Sign Up"/>
+		</div>
+    <h1>Boop!</h1>
+    <style>
 /* Full-width input fields */
 input[type=text], input[type=password] {
     width: 100%;
@@ -53,13 +61,21 @@ button {
     }
 }
 </style>
+  </head>
+  <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="textbooks.html">Buy Textbooks</a></li>
+      <li><a class="active" href="prepbooks.html">Buy Prep Books</a></li>
+      <li><a href="sell.html">Sell Books</a></li>
+      <li><a href="blog.html">Blog</a></li>
+	</ul>
 <body>
 
 <h2>Search</h2>
 
 <form action="/action_page.php" style="border:1px solid #ccc">
   <div class="container">
-    <label><b>What kind of book would you like to buy?</b></label>
+    <label><b>What kind of book would you like to buy?</b></label><br>
     <form action="">
     <input type="radio" name="typeofbook" value="textbook"> Textbook<br>
     <input type="radio" name="typeofbook" value="prepbook"> Prep Book<br><br>
