@@ -68,5 +68,5 @@ input[type=text], input[type=password] {
     }
 }
 .about {
-	align: center;
+	text-align: center;
 	}
