@@ -3,6 +3,7 @@ h1 {
 	font-family: 'Questrial', sans-serif;
 	font-size: 50px;
 	color: #666666;
+	padding-left: 15px;
 }
 body {
 	font-family: 'Roboto', sans-serif;	
@@ -43,12 +44,6 @@ input[type=text], input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-/* Extra styles for the cancel button */
-.cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
-}
-
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn,.signupbtn {
     float: left;
@@ -86,7 +81,7 @@ input[type=text], input[type=password] {
 /* Set a style for all buttons */
 button {
     background-color: #ABDB25;
-    background-color: #f44336;
+   
 }
 
 /* Float cancel and signup buttons and add an equal width */
