@@ -3,6 +3,32 @@
 <title>Book Hook</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	    <meta name="google-signin-client_id" content="457415715788-4e3v1m4t0r8g06roq3aburv55jc2bpna.apps.googleusercontent.com">
+	    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+		<script>
+			function onSignIn(googleUser) {
+			  var profile = googleUser.getBasicProfile();
+			  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+			  console.log('Name: ' + profile.getName());
+			  console.log('Image URL: ' + profile.getImageUrl());
+			  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+			}	 
+	       </script> 
+	  	
+		<script>
+		<a href="#" onclick="signOut();">Sign out</a>
+		  function signOut() {
+		    var auth2 = gapi.auth2.getAuthInstance();
+		    auth2.signOut().then(function () {
+		      console.log('User signed out.');
+		    });
+		  }			
+		</script>
+	    
+	
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css?family=Questrial|Roboto" rel="stylesheet">
 <link rel="stylesheet"  href="home.css">
