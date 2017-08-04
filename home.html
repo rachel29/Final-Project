@@ -79,7 +79,18 @@
     <a href="prepbooks.html" class="w3-left-align w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-lime">Buy Prep Books</a>
     <a href="sell.html" class="w3-left-align w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-lime">Sell Books</a>
     <a href="blog.html" class="w3-left-align w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-lime">Blog</a>
-    <a href="googlelogin.html" </a>
+    <a href="googlelogin.html"<script src="https://apis.google.com/js/platform.js" async defer></script>
+	    <meta name="google-signin-client_id" content="457415715788-4e3v1m4t0r8g06roq3aburv55jc2bpna.apps.googleusercontent.com">
+	    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+		<script>
+			function onSignIn(googleUser) {
+			  var profile = googleUser.getBasicProfile();
+			  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+			  console.log('Name: ' + profile.getName());
+			  console.log('Image URL: ' + profile.getImageUrl());
+			  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+			}	 
+	       </script>  </a>
     <a href="signup.html" class="w3-right w3-button w3-hide-small w3-padding-large w3-hover-lime">Sign Up</a>
 	 <a href="google.html" class="w3-right w3-button w3-hide-small w3-padding-large w3-hover-lime">Sign Up</a>
 
