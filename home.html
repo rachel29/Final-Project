@@ -6,6 +6,9 @@
 	    <script src="https://apis.google.com/js/platform.js" async defer></script>
 	    <div class="g-signin2" data-onsuccess="onSignIn"></div>
 	    	    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+	    gapi.load ('auth2', function() {
+	    	gapi.auth.init();
+	    });
 		<link href="https://fonts.googleapis.com/css?family=Questrial|Roboto" rel="stylesheet">
 	    <link rel="stylesheet"  href="home.css">
   	<title>Book Hook</title>
